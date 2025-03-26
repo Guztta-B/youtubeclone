@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Newa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{ 
+    background-color:#101010 ;
+    overflow-x: hidden;
+}
+.container { 
+    position: relative;
+    display: flex;
+    height: 100vh;
+}
+.sidebar{ 
+    width: 250px;
+    background-color: #101010;
+    padding: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fa-house{
+    color: #fff;
+}
+.nav-library {
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-library a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto padrão */
+    color: #fff;
+}
+.nav-library:hover {
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+.fa-play{
+    color: #fff;
+}
+
+/*aqui*/
+
+.nav-shorts {
+    padding: 0px;
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-shorts p {
+    color: #fff;
+}
+.nav-shorts:hover {
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+/*aqui*/
+
+.fa-images{ 
+    color: #fff;
+}
+.nav-inscr {
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-inscr a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto padrão */
+    color: #fff;
+}
+.nav-inscr:hover {
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+/*aqui*/
+.fa-circle-user{ 
+    color: #fff;
+}
+.nav-user {
+    padding-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-user a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Mantém a cor do texto padrão */
+    color: #fff;
+}
+.nav-user:hover {
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+/*aqui*/
+.fa-clock-rotate-left{ 
+    color: #fff;
+}
+.nav-historico {
+    height: 100px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.nav-historico p {
+    color: #fff;
+}
+.nav-historico:hover {
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+/*aqui*/
+.line {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    margin-top: 5px;
+    width: 100%;
+}
+.nav-log{
+    color: #fff;
+    font-size: 13px;
+    max-width: 150px;
+}
+/*aqui*/
+.nav-fazerlogin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-fazerlogin i{ 
+    color: #5b5ee9;
+}
+.nav-fazerlogin p{
+font-size: 14px;
+    border: 1px solid rgb(182, 182, 182);
+   padding-top: 5px;
+    height: 35px;
+    text-align: center;
+    width:125px;
+    background-color: transparent;
+    border-radius: 100px;
+    color: #5b5ee9
+}
+.nav-fazerlogin:hover {
+    
+     height: 35px;
+     text-align: center;
+     width:125px;
+     background-color: rgba(77, 110, 255, 0.377);
+     border-radius: 100px;
+}
+/*aqui*/
+
+.nav-explorar p{
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+.expl{
+    padding-left: 10px;
+    color: #fff;
+    font-size: 15px;
+
+}
+.nav-explorar p:hover{ 
+    border-radius: 5px;
+    background-color: #3b3b3b;
+    
+}
+
+main{ 
+    padding: 24px;
+    flex-grow: 1;
+    overflow-y: auto;
+    
+ }
+ .search-bar {
+    margin-left: 380px;
+     border: 1px solid #616161;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+     background-color: transparent;
+     width: 30%;
+     border-radius: 50px 0px 0px 50px;
+     
+ }
+ 
+ .house {
+     margin-right: 10px;
+     color: white;
+     font-size: 18px;
+ }
+ 
+ .search-bar input {
+     background-color: transparent;
+     border: none;
+     color: #ffffff;
+     width: 100%;
+     margin-left: 10px;
+     outline: none;
+     display: flex;
+ }
+ 
+ .search-bar input::placeholder {
+     color: gray;
+ }
+
+ .fa-magnifying-glass{ 
+    border: 1px solid #616161;
+    padding-top: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #2b2b2b; /* Cor do fundo do botão */
+    width: 60px;
+   height: 43px;
+    border-radius: 0 50px 50px 0;
+    position: absolute;
+    right: 751px; /* Ajuste a posição horizontal conforme necessário */
+    top: 45px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+ 
+
+ .title-right {
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid rgb(182, 182, 182);
+    padding-top: 6px;
+    height: 35px;
+    text-align: center;
+    width: 125px;
+    background-color: transparent;
+    color: #ffffff;
+    margin-left: auto;
+    margin-top: -45.7px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+ /*PUTA MERDA ONTEM PASSEI A TARDE INTEIRA BATENDO A CABEÇA NO FINAL TAVA DENTRO DE UMA DIV ERRADA FDP*/
+.fa-ellipsis-vertical {
+    color: #fff;
+    position: absolute;
+    right: 190px; /* Ajuste a posição horizontal conforme necessário */
+    top: 38px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.fa-microphone{
+    border-radius: 70%;
+    padding-top: 12px;
+    text-align: center;
+    background-color: #272626;
+    width: 40px;
+   height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 680px; /* Ajuste a posição horizontal conforme necessário */
+    top: 45px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Estilo do contêiner pai */
+.content {
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 10px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    padding: 20px;
+    
+}
+
+.promo-item {
+    display: flex;
+    flex-direction: column; /* Mantém o texto dentro do item alinhado verticalmente */
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #272626;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do texto */
+.promo-item p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+    max-width: 400px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* Efeito ao passar o mouse */
+.promo-item:hover {
+    background-color: #616161;
+}
+.fa-chevron-right{
+   padding: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.fa-chevron-right:hover{ 
+background-color: #272626;
+border-radius: 70%;
+padding-top: 12px;
+text-align: center;
+background-color: #272626;
+width: 40px;
+height: 40px;
+color: #fff;
+}
+
+.videos {
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    
+    padding: 10px;
+    
+}
+.video-sec img{ 
+    width: 300px;
+}
+.video-sec p{
+    color: #fff;
+}
+.video-sec .canal{
+    color:#616161;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+
+.videos2 {
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    
+    padding: 10px;
+    
+}
+.video-sec2 img{ 
+    width: 300px;
+}
+.video-sec2 p{
+    color: #fff;
+}
+.video-sec2 .canal{
+    color:#616161;
+    font-weight: 400;
+    font-size: 13px;
+}
